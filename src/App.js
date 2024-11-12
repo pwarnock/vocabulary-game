@@ -1,7 +1,9 @@
 import React from 'react';
 
 function App() {
-  const words = ["CAT", "DOG", "FISH", "BIRD", "APPLE", "CAR", "HOUSE", "TREE", "SUN", "MOON", "STAR", "BOOK", "TOY", "BALL", "CUP"];
+  // TODO dynamic card sets; for now this set was updated by a prompt in Cursor.
+  // multi-word names inadvertently introduced reading spaces and using spacebar; 5 yo picked up fast
+  const words = ["MICKEY MOUSE", "MINNIE MOUSE", "DONALD DUCK", "DAISY DUCK", "GOOFY", "PLUTO", "CHIP", "DALE", "SCROOGE MCDUCK", "HUEY", "DEWEY", "LOUIE", "PETE", "CLARABELLE COW", "HORACE HORSECOLLAR"];
   const [currentWord, setCurrentWord] = React.useState("");
   const [inputValue, setInputValue] = React.useState("");
   const [message, setMessage] = React.useState("");
