@@ -14,7 +14,7 @@ const mockWordPacks = [
 
 // Mock the service
 jest.mock('./wordPackService', () => ({
-  fetchWordPacks: jest.fn().mockResolvedValue(mockWordPacks)
+  fetchWordPacks: jest.fn(() => Promise.resolve(mockWordPacks))
 }));
 
 describe('App Component', () => {
