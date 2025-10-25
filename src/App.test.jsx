@@ -82,7 +82,7 @@ describe('App Component', () => {
 
     // Check for success message
     await waitFor(() => {
-      expect(screen.getByText((content, element) => {
+      expect(screen.getByText((content, _element) => {
         return content.includes('Great job!');
       })).toBeInTheDocument();
     });
@@ -104,7 +104,7 @@ describe('App Component', () => {
     fireEvent.click(submitButton);
 
     // Check for error message
-    expect(screen.getByText((content, element) => {
+    expect(screen.getByText((content, _element) => {
       return content.includes('Try again!');
     })).toBeInTheDocument();
   });
@@ -147,7 +147,7 @@ describe('App Component', () => {
 
     // Wait for success message
     await waitFor(() => {
-      expect(screen.getByText((content, element) => {
+      expect(screen.getByText((content, _element) => {
         return content.includes('Great job!');
       })).toBeInTheDocument();
     }, { timeout: 2000 });
