@@ -1,25 +1,80 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Vocabulary Game",
+  "short_name": "Vocab Game",
+  "description": "An interactive vocabulary learning game optimized for iPad",
+  "start_url": "/vocabulary-game/",
+  "display": "standalone",
+  "background_color": "#3B82F6",
+  "theme_color": "#3B82F6",
+  "orientation": "landscape",
+  "scope": "/vocabulary-game/",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/vocabulary-game/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/vocabulary-game/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/vocabulary-game/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "splash_screens": [
+    {
+      "src": "/vocabulary-game/splash-1136x640.png",
+      "sizes": "1136x640",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/splash-1334x750.png",
+      "sizes": "1334x750",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/splash-1792x828.png",
+      "sizes": "1792x828",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/splash-2048x1536.png",
+      "sizes": "2048x1536",
+      "type": "image/png"
+    },
+    {
+      "src": "/vocabulary-game/splash-2732x2048.png",
+      "sizes": "2732x2048",
+      "type": "image/png"
+    }
+  ]
 }

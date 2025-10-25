@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { fetchWordPacks } from './wordPackService';
+import './App.css';
 
 function App() {
   const [wordPacks, setWordPacks] = useState([]); 
