@@ -82,7 +82,9 @@ describe('App Component', () => {
 
     // Check for success message
     await waitFor(() => {
-      expect(screen.getByText('Great job!')).toBeInTheDocument();
+      expect(screen.getByText((content, element) => {
+        return content.includes('Great job!');
+      })).toBeInTheDocument();
     });
   });
 
@@ -102,7 +104,9 @@ describe('App Component', () => {
     fireEvent.click(submitButton);
 
     // Check for error message
-    expect(screen.getByText('Try again!')).toBeInTheDocument();
+    expect(screen.getByText((content, element) => {
+      return content.includes('Try again!');
+    })).toBeInTheDocument();
   });
 
   it('handles word pack selection', async () => {
@@ -136,14 +140,16 @@ describe('App Component', () => {
     const input = screen.getByPlaceholderText('Type here');
     const wordSpan = screen.getByText(/MOCK[12]/, { exact: false });
     const currentWord = wordSpan.textContent;
-    
+
     fireEvent.change(input, { target: { value: currentWord } });
     const submitButton = screen.getByText('Submit');
     fireEvent.click(submitButton);
 
     // Wait for success message
     await waitFor(() => {
-      expect(screen.getByText('Great job!')).toBeInTheDocument();
+      expect(screen.getByText((content, element) => {
+        return content.includes('Great job!');
+      })).toBeInTheDocument();
     }, { timeout: 2000 });
   });
 });

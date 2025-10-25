@@ -69,6 +69,28 @@ input[type="text"], select {
   transform: scale(1);
 }
 
+/* PWA Install Button */
+.install-button {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Word container for animations */
+.word-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
 /* Smooth transitions for better UX */
 * {
   -webkit-transition: all 0.2s ease-in-out;
